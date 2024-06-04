@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Investasi Obligasi</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kalkulator Investasi Obligasi</h1>
+      <form id="kalkulatorForm">
+        <label for="bunga">Bunga (% per tahun):</label>
+        <input type="number" id="bunga" name="bunga" required /><br /><br />
+
+        <label for="waktu">Waktu (tahun):</label>
+        <input type="number" id="waktu" name="waktu" required /><br /><br />
+
+        <label for="modal">Modal (Rp):</label>
+        <input type="number" id="modal" name="modal" required /><br /><br />
+
+        <button type="button" onclick="hitungInvestasi()">Hitung</button>
+      </form>
+
+      <div id="hasil">
+        <h2>Hasil Perhitungan</h2>
+        <p>Hasil Kotor per Tahun: <span id="hasil_kotor_pertahun"></span></p>
+        <p>Hasil Bersih per Tahun: <span id="hasil_bersih_pertahun"></span></p>
+        <p>Hasil Kotor per Bulan: <span id="hasil_kotor_perbulan"></span></p>
+        <p>Hasil Bersih per Bulan: <span id="hasil_bersih_perbulan"></span></p>
+        <p>
+          Hasil Kotor per Periode: <span id="hasil_kotor_perperiode"></span>
+        </p>
+        <p>
+          Hasil Bersih per Periode: <span id="hasil_bersih_perperiode"></span>
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
